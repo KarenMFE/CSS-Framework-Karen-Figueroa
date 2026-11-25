@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(22, 85, 87);
+    color: white;
+    font-size: 16px;
+}
+
+.content {
+    padding: 25px;
+}
+
+.sidebar {
+    background-color: rgb(154, 215, 215);
+    min-height: 100vh;
+    padding: 25px 15px;
+}
+
+.purity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 35px;
+    color: rgb(22, 85, 87);
+}
+
+.sidebar .nav_left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sidebar .nav_left img {
+    background-color: rgb(22, 85, 87);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.sidebar-AP {
+    font-weight: bold;
+    color: white;
+}
+
+.top_Bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 20px;
+}
+.top_Bar p {
+    font-size: 14px;
+}
+
+.top_Bar h1 {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.header_Buttons {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.header_Buttons a {
+    color: white;
+    text-decoration: none;
+}
+
+.category1 {
+    margin-bottom: 15px;
+}
+
+.category1_Boxes {
+background-color: rgb(154, 215, 215);
+border-radius: 12px;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.category1_Boxes p {
+    font-size: 14px;
+}
+
+.category1_Boxes h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(22, 85, 87);
+}
+
+.category_Boxes {
+    padding: 20px;
+    height: 100%;
+}
+
+.sales_Box {
+    background-color: rgb(154, 215, 215);
+    border-radius: 20px;
+}
+.sales_Box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.active_Box {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.active_Box img{
+    margin-bottom: 10px;
+}
+
+.category_Boxes h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.category_Boxes p {
+    font-size: 14px;
+}
+
+.project_Titles {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 0;
+    color: rgb(154, 215, 215);
+}
+
+.project-row {
+    min-height: 65px;
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+.project-row h3 {
+    font-size: 16px;
+}
+
+.order-info {
+
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.order-info h3 {
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        min-height: auto;
+
+    }
+
+    .purity {
+        margin-bottom: 10px;
+    }
+
+    .sidebar .nav_left {
+        padding: 8px 10px;
+    }
+
+    .sidebar-AP {
+        width: 100px;
+        margin: 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .top_Bar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .header_Buttons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .category1_Boxes {
+        padding: 10px;
+    }
+
+    .category_Boxes {
+        padding: 10px;
+    }
+
+   .chart_Image img,
+   .active_Box > img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    }
+
+    .project_Box {
+        padding: 12px;
+    }
+
+    .project_Titles {
+        font-size: 7px;
+        padding: 10px 0;
+    }
+
+    .project-row {
+        flex-wrap: nowrap;
+        padding: 12px 0;
+        font-size: 9px;
+        min-height: 55px;
+    }
+
+    .project-row .col-5 {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding-right: 2px;
+    }
+
+    .project-row h3 {
+        font-size: 8px;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .project-row img {
+        width: 17px;
+        max-width: 17px;
+        height: auto;
+    }
+
+    .project-row .col-2 img {
+        width: 100%;
+        max-width: 45px;
+    }
+
+    .project-row > div,
+    .project_Titles > div {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}
